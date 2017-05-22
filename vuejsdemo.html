@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="vuejsdemo.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="unixtime-convert">
+      <input
+        v-model="unixtime"
+        @keyup.enter="convertTime"
+        placeholder="Enter a unixtime"
+      >
+      <h1 v-if="unixtime">{{ convertedTime }}</h1>
+      <h1 v-else>Enter a unixtime number</h1>
+    </div>
+    <script type="text/javascript" src="vuejsdemo.js"></script>
+  </body>
+</html>
+
